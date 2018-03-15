@@ -1,0 +1,36 @@
+remove files from __staging area__
+
+git reset 
+
+cloneing a remote repo to current directory
+
+git clone <url> .
+
+revert to previous commit with changes staged:
+
+git reset --soft <hash>
+
+revert to previous commit with changes unstaged:
+
+git reset (--mixed) <hash>
+
+remove (delete) untracked files
+
+git clean -df
+
+	-d: directory, -f: file
+
+show recent referenced log
+
+git reflog
+	to checkout a commit that's been deleted from commit history by hard reset:
+	git checkout <hash>
+
+revert to a commit by creating a new commit
+git revert <hash>
+
+compare to commit
+git diff <hash> <hash>
+
+compare to branch
+git diff <branch> <branch (optional)>
